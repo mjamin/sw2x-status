@@ -28,6 +28,7 @@ h1 {
 
 table {
     width: 100%;
+    table-layout: fixed;
     border-left: 2px solid #444;
     border-right: 2px solid #444;
 }
@@ -41,7 +42,16 @@ table>tbody>tr>td,
 table>tbody>tr>th {
     padding: 1rem 1.5rem;
     text-align: left;
-    border-bottom: 1px solid rgba(0, 0, 0, .033);
+}
+
+table>tbody>tr>th {
+}
+
+table>thead>tr>th,
+table>tbody>tr>td {
+    text-overflow: ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
 }
 
 table>tbody>tr>td,
@@ -132,4 +142,33 @@ table>tbody>tr.status-movedon>td {
     background: #ccc;
     color: rgb(52, 122, 229);
     background: rgba(52, 122, 229, .25);
+}
+
+@media (max-width: 960px) {
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    table {
+        border-left: none;
+        border-right: none;
+    }
+
+    table>thead>tr>th,
+    table>tbody>tr>td,
+    table>tbody>tr>th,
+    .status-bar-header {
+        padding-left:  .8rem;
+        padding-right: .8rem;
+    }
+
+    .status-bar {
+        border-left: none;
+        border-right: none;
+    }
+
+    .container {
+        max-width: none;
+    }
 }

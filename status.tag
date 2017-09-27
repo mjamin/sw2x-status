@@ -5,7 +5,7 @@
     </div> 
     <table class="table">
         <colgroup>
-            <col />
+            <col style="width:50%" />
             <col />
             <col />
             <col style="width:4rem" />
@@ -15,8 +15,8 @@
             <tr>
                 <th>Entity</th>
                 <th>Status</th>
-                <th>Belongs to DCG portfolio?</th>
-                <th colspan="2">Contact</th>
+                <th>DCG portfolio?</th>
+                <th colspan="2"></th>
             </tr>
         </thead>
         <tbody>
